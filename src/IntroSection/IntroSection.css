@@ -63,6 +63,17 @@ opacity: 0.4994;
 text-align: left;
 }
 
+@media screen and (max-width: 1024px) {
+    
+.content-box img{
+
+    z-index: 0 !important;
+}
+
+.txt-box{
+    z-index: 0;
+}}
+
 @media screen and (max-width: 1111px) {
    
     .intro-section{

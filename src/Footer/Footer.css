@@ -1,0 +1,148 @@
+.footer{
+    width: 100%;
+    height: 160px;
+    background-color: #000;
+    margin-top: 184px;
+}
+
+.footer-desktop{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 44px;
+    gap: 24px;
+}
+
+.logo{
+    width: 144px;
+height: 24px;
+flex-shrink: 0;
+}
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 1110px !important;
+}
+
+.bottom-section{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 1110px !important;
+}
+
+.footer-mobile{
+    display: none;
+}
+
+.links{
+    display: flex;
+    gap: 32px;
+}
+
+.links a{
+    text-decoration: none;
+    color: #FFF;
+font-family: Alata;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 166.667% */
+
+display: inline-block;
+    position: relative;
+}
+
+
+.links a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+}
+
+.links a:hover::after{
+    transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.bottom-section p {
+    color: #FFF;
+    margin: 0;
+font-family: Alata;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 166.667% */
+opacity: 0.5;
+}
+
+.media{
+    width: 144px;
+height: 24px;
+}
+
+@media screen and (max-width: 1120px) {
+    .footer{
+        height: 470px;
+        margin-top: 96px;
+    }
+
+    .footer-desktop{
+        display: none;
+    }
+
+    .footer-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
+    .mobile-links{
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .mobile-links a{
+       text-decoration: none;
+       color: #FFF;
+font-family: Alata;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 166.667% */
+    }
+
+    .media{
+        margin-top: 48px;
+    }
+
+    .footer-mobile p{
+        color: #FFF;
+font-family: Alata;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 166.667% */
+opacity: 0.5;
+margin: 0;
+margin-top: 16px !important;
+    }
+    
+}
