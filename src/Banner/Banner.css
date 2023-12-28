@@ -45,14 +45,16 @@
 .text-box{
     position: absolute;
     border: 2px solid #FFF;
-    max-width: 650px;
-    max-height: 278px;
+    width: 650px;
+    height: 278px;
     top: 226px;
     left: 165px;
-    padding: 40px 40px;
 }
 
 .text-box p{
+    position: absolute;
+    top: 40px;
+    left: 40px;
   font-family: 'JosefinSans';
   color: #FFF;
 font-size: 72px;
@@ -84,21 +86,23 @@ z-index: 0;
     .text-box{
         position: absolute;
         border: 2px solid #FFF;
-        max-width: 327px;
-        max-height: 196px;
+        width: 327px !important;
+        height: 196px;
         top: 227px;
         left: 0;
         right: 0;
         margin: auto;
-        padding: 24px;
     }
 
     .text-box p{
         font-family: 'JosefinSans';
         color: #FFF;
+        max-width: 279px;
       font-size: 40px;
       font-style: normal;
       font-weight: 300;
-
+      line-height: 38px;
+        top: 26px;
+        left: 26px;
       }
   }
