@@ -1,0 +1,133 @@
+.main{
+    /* padding-left: 164px;
+    padding-right: 162px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-button{
+    display: none;
+}
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    align-items: center;
+    width: 100%;
+    max-width: 1114px;
+}
+.top-section h1{
+    color: #000;
+font-family: josefinSans;
+font-size: 48px;
+font-style: normal;
+font-weight: 300;
+line-height: 48px; /* 100% */
+text-transform: uppercase;
+margin: 0;
+}
+
+.top-section button{
+    width: 157px;
+height: 40px;
+flex-shrink: 0;
+
+
+font-family: Alata;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 14px; /* 100% */
+letter-spacing: 5px;
+text-transform: uppercase;
+
+border: 1px solid #000;
+color: #000;
+background-color: transparent;
+box-shadow: 1px 10px 20px 0px gray;
+
+}
+
+.top-section button:hover{
+    background-color: #000;
+    color: #fff;
+    box-shadow: none;
+    transition: 0.5s;
+}
+
+.cards-section{
+    max-width: 1114px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 80px; 
+    gap: 30px;
+}
+
+.cards-section-mobile{
+    display: none;
+    max-width: 1114px;
+    flex-direction: column;
+    margin-top: 48px; 
+    gap: 24px;
+}
+
+
+@media screen and (max-width: 1120px){
+    
+    .main{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .top-section{
+        flex-direction: column;
+    text-align: center;
+    }
+
+    .top-section button{
+        display: none;
+    }
+
+    .top-section h1{
+        font-size: 32px;
+    }
+
+    .mobile-button{
+        display: block;
+        width: 157px;
+        height: 40px;
+        flex-shrink: 0;
+        margin-top: 34px;
+        
+        font-family: Alata;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px; /* 100% */
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        
+        border: 1px solid #000;
+        color: #000;
+        background-color: transparent;
+        box-shadow: 1px 10px 20px 0px gray;
+    }
+
+    .mobile-button:hover{
+        background-color: #000;
+        color: #fff;
+        box-shadow: none;
+        transition: 0.5s;
+    }
+
+    .cards-section{
+        display: none;
+    }
+
+    .cards-section-mobile{
+        display: flex;
+    }
+}
