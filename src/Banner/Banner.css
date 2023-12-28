@@ -40,6 +40,27 @@
     font-family: Alata;
     font-size: 15px;
     font-weight: 400px;
+
+    display: inline-block;
+    position: relative;
+}
+
+.nav-links a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-links a:hover::after{
+    transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .text-box{
